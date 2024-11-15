@@ -1,0 +1,122 @@
+
+.portada{
+    color:rgb(211, 176, 81);
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+body {
+    background: linear-gradient(rgba(174, 128, 216, 0.3), transparent);
+    font-family: sans-serif;
+    color: #5a2d82;
+    display: grid;
+    grid-row: auto;
+}
+
+h1 {
+    font-family: "Archivo Black", Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 2.8em;
+    margin: 0.5em 0;
+}
+
+
+.rebaño{
+    margin: 30px;
+    color:  #c6beeb !important;
+    background-color: #5a2d82;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 12px rgba(231, 8, 8, 0.2);
+
+}
+h2 {
+    font-size: 2em;
+    margin: 0.5em 0; }
+
+.tarjeta {
+    margin: 0 auto;
+    width: 220px;
+    height: 250px;
+    box-sizing: border-box;
+    display: inline-block;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    background-color: #8a6e97; /* Marrón cálido */
+    color: #e6e2f8; /* Lavanda suave */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #5a2d82; /* Violeta profundo */
+    transform: scale(1.05);
+}
+
+.nav {
+    transform: scale(1.05);
+    margin: 40px;
+    padding: 15px 20px;
+}
+
+.contenedor {/*CONTACTO.HTML*/
+    margin: 20px;
+    display: grid;
+    color: #e6e2f8;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.texto, .formulario {/*CONTACTO.HTML*/
+    padding: 20px;
+    background-color: #5a2d82;
+    border-radius: 5px;
+}
+
+/*.formulario{
+    display: grid;
+    grid-template-columns: auto 2;
+    grid-template-rows: auto 4 ;
+}*/
+
+.cont{ /*PARTE DEL FOOTER*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.contact-item {/*PARTE DEL FOOTER*/
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-item h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.carta { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.carta-img {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;    
+}
