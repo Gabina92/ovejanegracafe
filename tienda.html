@@ -11,15 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
     <link rel="icon" href="img/ovejanegra.ico">
-    <link rel="stylesheet" href="contacto.html">
     <link rel="stylesheet" href="franquicias.html">
     <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="carta.html">
+    
 
 
 
 
-    <title>Oveja Negra/Contacto</title>
+    <title>Oveja Negra/Tienda</title>
 </head>
 <body>
     <header>
@@ -31,44 +31,69 @@
             <a href="index.html"><button>Inicio</button></a>
             <a href="carta.html"><button>Productos</button></a>
             <a href="franquicias.html"><button>Franquicias</button></a>
-            <a href="contacto.html"><button>Contacto</button></a>
+            <a href="tienda.html"><button>Tienda</button></a>
         </div>
         <br>
         <h3></h3>
     </header>
     <main>
-        <center><h2>Contacto</h2></center>
+        <center><h2>Tienda</h2></center>
         <div class="contenedor">
-            <section class="texto">
-            <p>Para recibir los "New letters" y demas eventos Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dicta, voluptatum quod laborum ad possimus? Cum hic autem repellendus natus quae? Ea, adipisci facere vero ipsum quas obcaecati amet fugiat?</p>
+        <div class="contenedorProductos">
+            <section>
+                <div class="productos">
+                    <img src="img/alfajor (2).jpg" alt="Alfajor de dulce de leche">
+                    <h3>Alfajor de DDL</h3>
+                    <h2>$2000.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('Alfajores',2000)">Comprar</botton>
+                </div>
+            </section>        
+            <section>
+                <div class="productos">
+                    <img src="img/alfajor.jpg" alt="Alfajor de pasta de avellanas" >
+                    <h3>Alfajor de Avellanas</h3>
+                    <h2>$2000.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('Alfajores',2000)">Comprar</botton>
+                </div>
             </section>
-            <section class="formulario">
-            <form   action="https://formspree.io/f/xgvwjrzz"
-            method="POST">
-
-                <label>Nombre:</label>
-                <input size="30" type="text" name="nombre">
-                <br>
-                <label>Teléfono:</label>
-                <input size="30" type="number" name="telefono">
-                <br><!--- salto de linea-->
-                <label>Email:</label>
-                <input size="30" type="email" name="email">
-                <br>
-                <label>Mensaje</label>
-                <input size="*" type="text" name="content">
-                <br>
-                <br>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </form>
-            </section></main>
-            <br>
-            <br>
-        
-    <footer><center>
-        <section><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5565976758335!2d-58.434725459695144!3d-34.61537217306268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4263e8948d%3A0x2ce6ab225d9aa25c!2sBogot%C3%A1%2070%2C%20C1405%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1727385049346!5m2!1ses-419!2sar" width="500" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+            <section>
+                <div class="productos">
+                    <img src="img/barraCereal (2).jpg" alt="Barra de cereal" >
+                    <h3>Barras de cereal</h3>
+                    <h2>$1500.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('BarrasCereal',1500)">Comprar</botton>
+                </div>
+            </section>
+            <section>
+                <div class="productos">
+                    <img src="img/barraCereal (3).jpg" alt="Barra de cereal">
+                    <h3>Barras de cereal</h3>
+                    <h2>$1500.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('BarrasCereal',1500)">Comprar</botton>
+                </div>
+            </section>
+            <section>
+                <div class="productos">
+                    <img src="img/jugo.jpeg" alt="jugo de naranja">
+                    <h3>Jugo de naranja</h3>
+                    <h2>$2000.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('Jugo',1500)">Comprar</botton>
+                </div>
+            </section>
+        </div>
+                <div id="contenedorCarrito" class="contenedorCarrito">
+                <h2>Carrito</h2>
+                <div id="carrito"></div>   
+                <div>
+                    <button id="btnPagar" onclick="pagar()">Pagar</button>
+                    <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+                </div>
+            </div>
+            </div>
+        </main>
         <br>
+        <br>    
+    <footer><center>
         <section><a href="index.html">volver</a></section>
         <br>
         </center>
@@ -93,5 +118,6 @@
         <section><p>&copy; 2024 Oveja Negra Café. Todos los derechos reservados.</p></section>
         </center>
     </footer>
+    <script src="js/javascript.js"></script>
 </body>
 </html>

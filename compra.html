@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/ovejanegra.ico">
+    <link rel="stylesheet" href="franquicias.html">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="carta.html">
+    
+
+
+
+
+    <title>Oveja Negra/Compra</title>
+</head>
+<body>
+    <header>
+        <div class="portada">
+            <img src="img/Capa1.png" alt="Logo de oveja negra cafetería." width="13%" height="13%" >
+            <h1>OVEJA NEGRA</h1>
+        </div>
+        <div class="nav">
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="carta.html"><button>Productos</button></a>
+            <a href="franquicias.html"><button>Franquicias</button></a>
+            <a href="tienda.html"><button>Tienda</button></a>
+        </div>
+        <br>
+    </header>
+    <main>
+        <center> <h1>Confirmación de Compra</h1></center>
+            <div id="contenedorCarrito" class="contenedorCarrito">
+                <h2>Carrito</h2>
+            <div id="carrito"></div>   
+            <div id="totalContainer">
+            <span id="btnPagar">0.00</span>
+            </div>
+            <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>   
+        </div>      
+        <section class="formulario">
+            <form   action="https://formspree.io/f/xgvwjrzz"
+            method="POST">
+                <h2>Datos personales</h2>
+                <label>Nombre:</label>
+                <input size="30" type="text" name="nombre">
+                <br>
+                <label>Teléfono:</label>
+                <input size="30" type="number" name="telefono">
+                <br><!--- salto de linea-->
+                <label>Email:</label>
+                <input size="30" type="email" name="email">
+                <br>
+                <label>Mensaje</label>
+                <input size="*" type="text" name="content">
+                <br>
+                <br>
+                <button type="submit">Confirmar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </section>
+    <footer>
+        <center>
+            <section><a href="index.html">volver</a></section>
+            <br>
+            </center>
+            <section class="cont">
+                <div class="contact-item">
+                    <img src="img/llamada-telefonica.png" alt="telefono" width="30px">
+                    <h3>4555-1232</h3>
+                </div>
+                <div class="contact-item">
+                    <img src="img/llamada-telefonica.png" alt="telefono" width="30px">
+                    <h3>11 6270-4334</h3>
+                </div>
+                <div class="contact-item">
+                    <img src="img/correo.png" alt="correo" width="30px">
+                    <h3>ovejanegra@gmail.com</h3>
+                </div>
+            </section>
+            <center><nav>
+                <a href="http://www.instagram.com"><img src="img/logotipo-de-instagram.png" alt="Enlace a instagram" width="30px"></a>
+                <a href="http://www.Facebook.com"><img src="img/facebook.png" alt="Enlace a Facebook" width="30px"></a>
+            </nav>
+            <section><p>&copy; 2024 Oveja Negra Café. Todos los derechos reservados.</p></section>
+            </center>
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
