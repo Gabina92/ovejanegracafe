@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/ovejanegra.ico">
+    <link rel="stylesheet" href="franquicias.html">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="carta.html">
+    
+
+
+
+
+    <title>Oveja Negra/Tienda</title>
+</head>
+<body>
+    <header>
+        <div class="portada">
+            <img src="img/Capa1.png" alt="Logo de oveja negra cafetería." width="13%" height="13%" >
+            <h1>OVEJA NEGRA</h1>
+        </div>
+        <div class="nav">
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="carta.html"><button>Productos</button></a>
+            <a href="franquicias.html"><button>Franquicias</button></a>
+            <a href="tienda.html"><button>Tienda</button></a>
+        </div>
+        <br>
+        <h3></h3>
+    </header>
+    <main>
+        <center><h2>Tienda</h2></center>
+        <div class="contenedor">
+        <div class="contenedorProductos">
+            <section>
+                <div class="productos">
+                    <img src="img/alfajor (2).jpg" alt="Alfajor de dulce de leche">
+                    <h3>Alfajor de DDL</h3>
+                    <h2>$2000.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('Alfajores',2000)">Comprar</botton>
+                </div>
+            </section>        
+            <section>
+                <div class="productos">
+                    <img src="img/alfajor.jpg" alt="Alfajor de pasta de avellanas" >
+                    <h3>Alfajor de Avellanas</h3>
+                    <h2>$2000.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('Alfajores',2000)">Comprar</botton>
+                </div>
+            </section>
+            <section>
+                <div class="productos">
+                    <img src="img/barraCereal (2).jpg" alt="Barra de cereal" >
+                    <h3>Barras de cereal</h3>
+                    <h2>$1500.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('BarrasCereal',1500)">Comprar</botton>
+                </div>
+            </section>
+            <section>
+                <div class="productos">
+                    <img src="img/barraCereal (3).jpg" alt="Barra de cereal">
+                    <h3>Barras de cereal</h3>
+                    <h2>$1500.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('BarrasCereal',1500)">Comprar</botton>
+                </div>
+            </section>
+            <section>
+                <div class="productos">
+                    <img src="img/jugo.jpeg" alt="jugo de naranja">
+                    <h3>Jugo de naranja</h3>
+                    <h2>$2000.</h2>
+                    <botton id="btnComprar" onclick="agregarProducto('Jugo',1500)">Comprar</botton>
+                </div>
+            </section>
+        </div>
+                <div id="contenedorCarrito" class="contenedorCarrito">
+                <h2>Carrito</h2>
+                <div id="carrito"></div>   
+                <div>
+                    <button id="btnPagar" onclick="pagar()">Pagar</button>
+                    <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+                </div>
+            </div>
+            </div>
+        </main>
+        <br>
+        <br>    
+    <footer><center>
+        <section><a href="index.html">volver</a></section>
+        <br>
+        </center>
+        <section class="cont">
+            <div class="contact-item">
+                <img src="img/llamada-telefonica.png" alt="telefono" width="30px">
+                <h3>4555-1232</h3>
+            </div>
+            <div class="contact-item">
+                <img src="img/llamada-telefonica.png" alt="telefono" width="30px">
+                <h3>11 6270-4334</h3>
+            </div>
+            <div class="contact-item">
+                <img src="img/correo.png" alt="correo" width="30px">
+                <h3>ovejanegra@gmail.com</h3>
+            </div>
+        </section>
+        <center><nav>
+            <a href="http://www.instagram.com"><img src="img/logotipo-de-instagram.png" alt="Enlace a instagram" width="30px"></a>
+            <a href="http://www.Facebook.com"><img src="img/facebook.png" alt="Enlace a Facebook" width="30px"></a>
+        </nav>
+        <section><p>&copy; 2024 Oveja Negra Café. Todos los derechos reservados.</p></section>
+        </center>
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

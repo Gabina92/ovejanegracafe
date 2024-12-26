@@ -1,0 +1,253 @@
+
+.portada{
+    color:#000000;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+body {
+    background: linear-gradient(rgba(174, 128, 216, 0.3), transparent);
+    font-family: sans-serif;
+    color: #5a2d82;
+    display: grid;
+    grid-row: auto;
+}
+
+h1 {
+    font-family: "Archivo Black", Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 2.8em;
+    margin: 0.5em 0;
+}
+
+
+.rebaño{
+    margin: 30px;
+    color:  #c6beeb !important;
+    background-color: #5a2d82;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 12px rgba(231, 8, 8, 0.2);
+
+}
+h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+/* Contenedor general */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+/* Tarjetas individuales */
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* Efecto hover */
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Imagen dentro de la tarjeta */
+.tarjeta img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+/* Contenido textual */
+.contenido-tarjeta {
+    padding: 10px;
+    background: #f9f9f9;
+    width: 100%;
+}
+.contenido-tarjeta h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: grid; /* Usamos grid para dividir la página en dos columnas */
+    grid-template-columns: 1fr 300px; /* Dos columnas: la primera para productos, la segunda para el carrito */
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+}
+
+/* Contenedor de productos */
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Productos en varias columnas */
+    gap: 20px;
+}
+
+/* Estilo de cada producto */
+.productos {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.productos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.productos h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.productos h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Estilo del carrito */
+.contenedorCarrito {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+button btnComprar{
+    background-color: #8a6e97; /* Marrón cálido */
+    color: #e6e2f8; /* Lavanda suave */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #5a2d82; /* Violeta profundo */
+    transform: scale(1.05);
+}
+
+/* Estilo de los botones */
+
+
+/* Responsividad: para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, todo se apila en una sola columna */
+    }
+
+    .contenedorProductos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Los productos se ajustan a 150px como mínimo */
+    }
+}
+
+
+
+button {
+    background-color: #8a6e97; /* Marrón cálido */
+    color: #e6e2f8; /* Lavanda suave */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #5a2d82; /* Violeta profundo */
+    transform: scale(1.05);
+}
+
+.nav {
+    position: sticky;
+    z-index: 100;
+    transform: scale(1.05);
+    margin: 40px;
+    padding: 15px 20px;
+}
+
+.item { background-color: #5a2d82;
+padding: 10px;
+color:white ;
+border: radius 10px;;}
+/*.texto, .formulario {/*CONTACTO.HTML
+    padding: 20px;
+    background-color: #5a2d82;
+    border-radius: 5px;
+}*/
+/*.formulario{
+    display: grid;
+    grid-template-columns: auto 2;
+    grid-template-rows: auto 4 ;
+}*/
+
+.cont{ /*PARTE DEL FOOTER*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.contact-item {/*PARTE DEL FOOTER*/
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-item h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.carta { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.carta-img {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;    
+}
+
+.contenedorCarrito, .formulario {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#carrito {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    background-color: #fff;
+}
+
+#btnPagar {
+    font-weight: bold;
+    margin: 10px 0;
+}
